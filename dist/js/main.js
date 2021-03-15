@@ -11,7 +11,7 @@
   function initSlider() {
     $('.content-right .slider').slick({
       // vertical: true,
-      verticalSwiping: true,
+      // verticalSwiping: true,
       adaptiveHeight: true,
       nextArrow:
         '<button type="button" class="next-slide"><i class="fas fa-chevron-down" aria-hidden="true"></i></button>',
