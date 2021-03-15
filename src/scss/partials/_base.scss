@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+p {
+  @include font-size(15);
+  color: $c-main;
+}
+a {
+  text-decoration: none;
+  color: $c-main;
+  &:hover {
+    color: $c-black;
+  }
+}
+html {
+  font-size: 100%;
+  font-family: $f-main;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  @include bp(xsmall) {
+    max-width: 540px;
+  }
+  @include bp(small) {
+    max-width: 720px;
+  }
+  @include bp(medium) {
+    max-width: 960px;
+  }
+  @include bp(large) {
+    max-width: 1140px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  -moz-user-drag: -moz-none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  &.aligncenter {
+    margin: 0 auto 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+figure {
+  position: relative;
+  margin: 0 0;
+}
+
+ul,
+ol {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+li ul,
+li ol {
+  margin: 0;
+}
+
+/********************
+** Typography
+********************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $c-main;
+}
+
+h1 {
+  @include font-size(35);
+  @include bp(xsmall) {
+    @include font-size(40);
+  }
+}
+
+h2 {
+  @include font-size(30);
+  @include bp(xsmall) {
+    @include font-size(35);
+  }
+}
+
+h3 {
+  @include font-size(25);
+}
+
+h4 {
+  @include font-size(20);
+}
+
+h5 {
+  @include font-size(18);
+}
+
+button,
+.button {
+  background: $c-main;
+  color: $c-white;
+  padding: 13px 10px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  &:hover {
+    background: #2b2a2a;
+    color: $c-white;
+  }
+}
+
+.slick-slider {
+  .slick-slide:focus {
+    outline: none;
+  }
+}
+
+.ok-validation {
+  border: 1px solid green;
+}
+.error-validation {
+  border: 1px solid red;
+}
+
+.hidden{visibility:hidden;
+  width:0px!important;
+  height:0px!important;
+  margin:0px!important;
+  padding:0px!important;
+  }

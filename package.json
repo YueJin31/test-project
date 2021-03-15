@@ -1,0 +1,29 @@
+{
+  "name": "project-for-justcoded",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evgeny Babenko",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "browserslist": "> 0.1%",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
+  }
+}
