@@ -39,9 +39,6 @@
       }
       margin: 0 15px;
       .slider {
-        &__item{
-          // min-height: 300px;
-        }
         max-width: 480px;
         margin: 0 auto;
         @include bp (large){

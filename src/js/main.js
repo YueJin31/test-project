@@ -13,7 +13,6 @@
       // vertical: true,
       verticalSwiping: true,
       adaptiveHeight: true,
-      slidesToShow: 1,
       nextArrow:
         '<button type="button" class="next-slide"><i class="fas fa-chevron-down" aria-hidden="true"></i></button>',
       prevArrow:
@@ -98,19 +97,10 @@
       $container.after(
         '<div class="latest-projects__content--button"><button id="load-more" class="button">See All</button></div>'
       );
+
       $('#load-more').click(function () {
-        if ($('.cases_filter').data('clicked')) {
-          counter = initShow;
-          $('.cases_filter').data('clicked', false);
-        } else {
-          counter = counter;
-        }
         counter = counter + initShow;
         loadMore(counter);
-      });
-      $('.cases_filter').click(function () {
-        $(this).data('clicked', true);
-        loadMore(initShow);
       });
     }
   }
