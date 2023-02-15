@@ -1,0 +1,190 @@
+#about-section {
+  background-color: #e9e9e9;
+  padding: 50px 0;
+  @include bp(small) {
+    padding: 115px 0;
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    flex-direction: row;
+    justify-content: space-between;
+    .content-left {
+      border-radius: 10px;
+      background-color: #e9e9e9;
+      box-shadow: 0px 4px 18px 0px rgba(1, 1, 1, 0.14);
+      padding: 25px 30px;
+      margin: 0 15px 50px 15px;
+      @include bp(small) {
+        margin: 0 15px;
+        padding: 50px 62px;
+      }
+      span {
+        @include font-size(30);
+        font-family: $f-secondary;
+        font-weight: bold;
+        margin-right: 9px;
+      }
+      p {
+        line-height: 1.3;
+        font-family: $f-main;
+        word-break: break-all;
+      }
+    }
+    .content-right {
+      .wrapper-slider{
+        display: block;
+        overflow: hidden !important;
+      }
+      margin: 0 15px;
+      .slider {
+        max-width: 480px;
+        margin: 0 auto;
+        @include bp (large){
+          margin-left: auto;
+        }
+        h4 {
+          width: 80%;
+          margin-bottom: 25px;
+          font-family: $f-secondary;
+          font-weight: bold;
+          color: $c-main;
+          @include bp (small) {
+            width: 100%;
+          }
+        }
+        p {
+          line-height: 1.6;
+          font-family: $f-third;
+        }
+        .next-slide,
+        .prev-slide {
+          position: absolute;
+          background: transparent;
+          color: #c0c0c0;
+          z-index: 999;
+          @include font-size(25);
+          padding: 0;
+          &:hover {
+            color: $c-black;
+          }
+        }
+        .prev-slide {
+          right: 0;
+          top: 0;
+        }
+        .next-slide {
+          right: 0;
+          top: 20px;
+        }
+      }
+    }
+    .content-left,
+    .content-right {
+      width: calc(100% / 12 * 12 - 30px);
+      @include bp(small) {
+        width: calc(100% / 12 * 6 - 30px);
+      }
+    }
+  }
+}
+#latest-projects {
+  padding: 45px 0 40px 0;
+  @include bp(small) {
+    padding: 95px 0 90px 0;
+  }
+  .latest-projects__title {
+    h3 {
+      font-weight: bold;
+      text-align: center;
+      font-family: $f-secondary;
+      margin-bottom: 25px;
+      @include bp(small) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .latest-projects__content {
+    &--button {
+      text-align: center;
+      margin-top: 45px;
+      @include bp(small) {
+        margin-top: 90px;
+      }
+      #load-more {
+        padding: 15px 45px;
+        font-family: $f-secondary;
+        @include font-size(18);
+        color: #ccc;
+      }
+    }
+    &--items {
+      .item {
+        position: relative;
+        border: 2px solid #cfcfcf;
+        border-radius: 5px;
+        margin-bottom: 26px;
+        &:hover {
+          .img-holder {
+            img {
+              opacity: 0.4;
+            }
+          }
+          .hide-content {
+            opacity: 1;
+          }
+          .hide-icons {
+            opacity: 1;
+          }
+        }
+        .img-holder {
+          background: $c-main;
+          overflow: hidden;
+          position: relative;
+          img {
+            transition: opacity 0.8s ease;
+          }
+        }
+        .hide-icons {
+          position: absolute;
+          display: flex;
+          top: 35%;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: all 0.5s ease-in;
+          img {
+            margin-right: 25px;
+            cursor: pointer;
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+        .hide-content {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          transition: all 0.5s ease;
+          opacity: 0;
+          &__info {
+            background: #d3d3d3;
+            padding: 15px 11px 12px 11px;
+            @include bp(small) {
+              padding: 30px 22px 25px 22px;
+            }
+            h5 {
+              font-weight: bold;
+              font-family: $f-secondary;
+            }
+            p {
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+  }
+}

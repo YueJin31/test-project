@@ -1,0 +1,59 @@
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims';
+
+@font-face {
+  font-family: 'Arvo';
+  src: local('Arvo Regular'), url('../fonts/Arvo/Arvo.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arvo';
+  src: local('Arvo Bold'), url('../fonts/Arvo/Arvo-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins Regular'),
+    url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Bold'),
+    url('../fonts/Raleway/Raleway-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'),
+    url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Italic'),
+    url('../fonts/Roboto/Roboto-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Regular'),
+    url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

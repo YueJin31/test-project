@@ -1,0 +1,117 @@
+.footer {
+  padding: 40px 0;
+  position: relative;
+  @include bp(small) {
+    padding: 95px 0;
+  }
+  background: #d3d3d3;
+  &__block {
+    > p {
+      margin-bottom: 20px;
+      span {
+        font-weight: bold;
+      }
+    }
+    &:nth-child(-n + 2) {
+      width: calc(100% / 12 * 6 - 30px);
+      @include bp(small) {
+        width: calc(100% / 12 * 4 - 30px);
+      }
+      @include bp(medium) {
+        width: calc(100% / 12 * 3 - 30px);
+      }
+    }
+    width: calc(100% / 12 * 12 - 30px);
+    @include bp(xsmall) {
+      width: calc(100% / 12 * 6 - 30px);
+    }
+    @include bp(small) {
+      width: calc(100% / 12 * 4 - 30px);
+    }
+    @include bp(medium) {
+      width: calc(100% / 12 * 3 - 30px);
+    }
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 30px;
+    @include bp(small) {
+      margin: 0 15px;
+    }
+    &--title {
+      color: $c-main;
+      margin-bottom: 20px;
+      font-family: $f-secondary;
+      @include bp(small) {
+        margin-bottom: 45px;
+      }
+      font-weight: bold;
+    }
+    a {
+      margin-bottom: 10px;
+      transition: all 0.5s ease;
+      @include font-size(15);
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &:first-child {
+      h4 {
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          background: $c-main;
+          width: 15px;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    flex-direction: row;
+  }
+  &__copyright {
+    background: $c-main;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    p {
+      color: $c-white;
+      font-family: $f-secondary;
+      font-weight: bold;
+      color: #ccc;
+    }
+  }
+  form {
+    .field {
+      position: relative;
+      button {
+        @include font-size(15);
+        color: #ccc;
+        font-family: $f-secondary;
+        position: absolute;
+        padding: 11px 20px 11px 20px;
+        right: 0;
+        line-height: 1.2;
+        top: 0;
+        border-radius: 0 12px 12px 0;
+        min-height: 100%;
+      }
+      input {
+        width: 100%;
+        border-radius: 10px;
+        padding: 13px 93px 13px 7px;
+        outline: 0;
+        background: #eceaea;
+      }
+    }
+  }
+}

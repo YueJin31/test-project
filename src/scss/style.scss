@@ -1,0 +1,14 @@
+//setups
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+
+//Partials
+@import 'partials/base';
+@import 'partials/header';
+@import 'partials/content';
+@import 'partials/footer';
+
+//Slick
+@import 'plugins/slick-theme';
+@import 'plugins/slick';
